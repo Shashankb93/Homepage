@@ -19,23 +19,17 @@
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div id="upload-files">
-            <h2>Upload Files</h2>
-            <p>Here you can upload your own files related to number system, such as notes, worksheets, solutions, or questions. You can also view and download the files uploaded by other users. Please make sure that your files are in PDF format and do not contain any inappropriate or irrelevant content.</p>
-            <form action="upload.php" method="post" enctype="multipart/form-data">
-                <label for="file">Select a PDF file to upload:</label>
-                <input type="file" id="file" name="file" accept="application/pdf">
-                <input type="submit" value="Upload" name="submit">
+        <div id="upload-videos">
+            <h2>Upload Videos</h2>
+            <p>Here you can upload your own video lectures for number system. This option is only available for the owner of the website. Please enter your username and password to access this feature.</p>
+            <form action="login.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Login" name="submit">
             </form>
-            <table>
-                <tr>
-                    <th>File Name</th>
-                    <th>File Size</th>
-                    <th>File Description</th>
-                    <th>Download Link</th>
-                </tr>
-                <!-- Add more rows here with the file details and download links -->
-            </table>
+            <!-- Add the code for uploading video files after the user is authenticated -->
         </div>
     </div>
     <div id="footer">
